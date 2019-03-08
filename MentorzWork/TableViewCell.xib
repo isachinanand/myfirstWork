@@ -79,6 +79,8 @@
             <connections>
                 <outlet property="butotn" destination="JKO-xm-hwe" id="ezs-5P-6SG"/>
                 <outlet property="descriptionLabel" destination="Pef-BF-r9g" id="OkH-Sv-4dr"/>
+                <outlet property="displayImage" destination="kEC-DL-Jb4" id="Vz7-IJ-XWP"/>
+                <outlet property="nameLabel" destination="PWh-89-Xo8" id="r7j-Om-ous"/>
             </connections>
             <point key="canvasLocation" x="180.80000000000001" y="198.80059970014995"/>
         </tableViewCell>
