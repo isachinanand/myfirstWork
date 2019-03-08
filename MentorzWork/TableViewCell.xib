@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="MentorzWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="151.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kEC-DL-Jb4">
+                        <rect key="frame" x="16" y="39" width="59" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="bIe-72-3CQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWh-89-Xo8">
+                        <rect key="frame" x="82" y="6" width="246" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="c2I-DJ-BI1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pef-BF-r9g">
+                        <rect key="frame" x="81" y="50" width="277" height="42"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKO-xm-hwe" customClass="BorderColorButton" customModule="MentorzWork" customModuleProvider="target">
+                        <rect key="frame" x="16" y="100" width="342" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="ZgZ-1u-WdX"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFd-lY-cao">
+                        <rect key="frame" x="268" y="59" width="90" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="... see more"/>
+                        <connections>
+                            <action selector="seemore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9Bb-tG-2Fm"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JKO-xm-hwe" firstAttribute="top" secondItem="Pef-BF-r9g" secondAttribute="bottom" constant="8" symbolic="YES" id="6kk-xh-Wee"/>
+                    <constraint firstItem="JKO-xm-hwe" firstAttribute="top" secondItem="kEC-DL-Jb4" secondAttribute="bottom" constant="15" id="9EK-P4-z4M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pef-BF-r9g" secondAttribute="trailing" id="BZH-Z8-VCZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PWh-89-Xo8" secondAttribute="trailing" constant="30" id="DrC-BQ-p5t"/>
+                    <constraint firstItem="JKO-xm-hwe" firstAttribute="top" secondItem="NFd-lY-cao" secondAttribute="bottom" constant="8" id="EVA-Xq-zNA"/>
+                    <constraint firstItem="Pef-BF-r9g" firstAttribute="top" secondItem="PWh-89-Xo8" secondAttribute="bottom" constant="19" id="Ndz-YD-pU2"/>
+                    <constraint firstItem="kEC-DL-Jb4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="28" id="Qbt-1s-qyI"/>
+                    <constraint firstItem="kEC-DL-Jb4" firstAttribute="leading" secondItem="JKO-xm-hwe" secondAttribute="leading" id="aJ3-ZU-jPS"/>
+                    <constraint firstItem="Pef-BF-r9g" firstAttribute="leading" secondItem="kEC-DL-Jb4" secondAttribute="trailing" constant="6" id="ahJ-7H-DWp"/>
+                    <constraint firstItem="PWh-89-Xo8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="66" id="bnk-ap-Ooy"/>
+                    <constraint firstItem="kEC-DL-Jb4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ckk-3a-qcW"/>
+                    <constraint firstItem="PWh-89-Xo8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="hGV-Ch-Rvk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JKO-xm-hwe" secondAttribute="bottom" constant="3" id="jt2-aQ-tUz"/>
+                    <constraint firstItem="NFd-lY-cao" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xSc-lT-LOG"/>
+                    <constraint firstItem="JKO-xm-hwe" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zFz-Ld-x9Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="butotn" destination="JKO-xm-hwe" id="ezs-5P-6SG"/>
+                <outlet property="descriptionLabel" destination="Pef-BF-r9g" id="OkH-Sv-4dr"/>
+            </connections>
+            <point key="canvasLocation" x="180.80000000000001" y="198.80059970014995"/>
+        </tableViewCell>
+    </objects>
+</document>
